@@ -58,7 +58,7 @@ class AboutControlStatements(Koan):
         result = []
         for item in phrase:
             result.append(item.upper())
-        self.assertEqual(["fish", "and", "chips"], result)
+        self.assertEqual(["FISH", "AND", "CHIPS"], result)
 
     def test_for_statement_with_tuples(self):
         round_table = [
@@ -73,7 +73,7 @@ class AboutControlStatements(Koan):
 
         text = __
 
-        self.assertRegex(result[2], "Contestant: 'Robin'","Answer: 'Blue! I mean Grean!'")
+        self.assertRegex(result[2], "Contestant: 'Robin'", "Answer: 'Blue! I mean Grean!'")
 
         self.assertNotRegex(result[0], text)
         self.assertNotRegex(result[1], text)
