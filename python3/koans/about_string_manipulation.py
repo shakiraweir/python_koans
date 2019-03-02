@@ -64,11 +64,11 @@ class AboutStringManipulation(Koan):
 
     def test_strings_can_be_joined(self):
         words = ["Now", "is", "the", "time"]
-        self.assertEqual("tOtAlLy AwEsOmE", ' '.join(words))
+        self.assertEqual('Now is the time', ' '.join(words))
 
     def test_strings_can_change_case(self):
         self.assertEqual("Guido", 'guido'.capitalize())
         self.assertEqual('GUIDO', 'guido'.upper())
-        self.assertEqual('GUIDO', 'TimBot'.lower())
+        self.assertEqual('timbot', 'TimBot'.lower())
         self.assertEqual("Guido Van Rossum", 'guido van rossum'.title())
         self.assertEqual("tOtAlLy AwEsOmE", 'ToTaLlY aWeSoMe'.swapcase())
